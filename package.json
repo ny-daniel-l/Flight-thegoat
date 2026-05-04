@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "clean-css-cli": "latest",
+    "fs-extra": "latest",
+    "html-minifier-terser": "latest",
+    "sass": "latest"
+  }
+}

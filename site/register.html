@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight vs Cash | Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="site-logo" href="index.html"><span>Flight</span> VS <span>Cash</span></a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="creators.html">Creators</a>
+      <a href="register.html" class="active">Register</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Mitmachen</p>
+        <h1 class="page-title">Registrieren</h1>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container form-container">
+        <form class="form" action="confirm.html" method="get">
+
+          <fieldset>
+            <legend>Persönliche Angaben</legend>
+
+            <div class="form-row">
+              <label for="firstname">Vorname</label>
+              <input id="firstname" name="firstname" type="text" required>
+            </div>
+
+            <div class="form-row">
+              <label for="lastname">Nachname</label>
+              <input id="lastname" name="lastname" type="text" required>
+            </div>
+
+            <div class="form-row">
+              <label for="email">E-Mail</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+
+            <div class="form-row">
+              <label for="password">Passwort</label>
+              <input id="password" name="password" type="password" required>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Adresse</legend>
+
+            <div class="form-row">
+              <label for="street">Strasse</label>
+              <input id="street" name="street" type="text" required>
+            </div>
+
+            <div class="form-row">
+              <label for="zip">PLZ</label>
+              <input id="zip" name="zip" type="text" required>
+            </div>
+
+            <div class="form-row">
+              <label for="city">Ort</label>
+              <input id="city" name="city" type="text" required>
+            </div>
+
+            <div class="form-row">
+              <label for="country">Land</label>
+              <select id="country" name="country" required>
+                <option value="">Bitte auswählen</option>
+                <option value="ch">Schweiz</option>
+                <option value="de">Deutschland</option>
+                <option value="at">Österreich</option>
+                <option value="other">Anderes Land</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <div class="form-row form-row-checkbox">
+            <label for="privacy">Datenschutz</label>
+            <label class="checkbox-label">
+              <input id="privacy" name="privacy" type="checkbox" required>
+              Ich akzeptiere die Datenschutzbedingungen.
+            </label>
+          </div>
+
+          <button class="button button-blue" type="submit">Registrieren</button>
+
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p><span class="text-orange">Flight</span> VS <span class="text-blue">Cash</span></p>
+    <p>Fan-Projekt für Modul 293.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
