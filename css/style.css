@@ -90,6 +90,21 @@ ul { list-style: none; }
 .site-nav a:hover,
 .site-nav a.active { color: var(--text); }
 
+.site-nav a.nav-contact {
+  color: var(--text);
+  background: var(--orange);
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.site-nav a.nav-contact:hover {
+  background: var(--orange-dark);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
 /* ── Hero (index) ───────────────────────────────────────────── */
 .site-hero {
   position: relative;
